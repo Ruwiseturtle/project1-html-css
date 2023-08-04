@@ -1,0 +1,405 @@
+/**
+  |============================
+  | СТИЛІ ХІРОУ
+  |============================
+*/
+.cont-hero {
+  /* position: relative;
+  z-index: -2; */
+  position: relative;
+  padding-top: 56px;
+  padding-bottom: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 355px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/mobgirl@1x.webp);
+  background-position-y: 50px;
+
+  /* border: 1px solid;
+  border-image-source: linear-gradient(
+    359.94deg,
+    #ffffff -1.7%,
+    rgba(255, 255, 255, 0.441769) 30.64%,
+    rgba(255, 255, 255, 0) 76.92%
+  );
+  background: linear-gradient(
+    359.94deg,
+    #ffffff -1.7%,
+    rgba(255, 255, 255, 0.441769) 30.64%,
+    rgba(255, 255, 255, 0) 76.92%
+  ); */
+}
+
+@media (max-width: 767px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .cont-hero {
+      background-image: url(../img/mobgirl@2x.webp);
+    }
+  }
+}
+
+.hero-text-h1 {
+  /* max-width: 335px; */
+  font-family: 'DM Sans';
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: var(--color-white);
+  text-transform: uppercase;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 386px;
+}
+/* .girl-container {
+  position: relative;
+  top: -62px;
+  display: inline-block;
+  width: 335px;
+  height: 509px;
+  border: 1px solid #ffffff;
+  border-radius: 500px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-image-source: linear-gradient(
+    359.94deg,
+    #ffffff -1.7%,
+    rgba(255, 255, 255, 0.441769) 30.64%,
+    rgba(255, 255, 255, 0) 76.92%
+  );
+} */
+/* .girl {
+  width: 311px;
+  height: 484px;
+  background-image: url(../img/newgirl@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-image-source: linear-gradient(
+    359.94deg,
+    #ffffff -1.7%,
+    rgba(255, 255, 255, 0.441769) 30.64%,
+    rgba(255, 255, 255, 0) 76.92%
+  );
+} */
+.hero-button {
+  display: block;
+  font-family: 'DM Sans';
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: var(--color-red);
+  background-color: var(--color-white);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  margin-bottom: 44px;
+  transform: rotate(345deg);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button:focus,
+.hero-button:hover {
+  color: var(--color-green);
+}
+
+.hero-text {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  color: var(--color-white);
+  width: 279px;
+  height: 90px;
+  margin-bottom: 44px;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  /* text-align: center; */
+  margin: 0;
+}
+.fruit-first-card {
+  width: 249px;
+  height: 387px;
+  background-color: var(--color-green);
+  border-radius: 500px;
+  margin: 44px auto;
+}
+.fruit-second-card {
+  width: 249px;
+  height: 387px;
+  background-color: var(--color-yellow);
+  border-radius: 500px;
+  margin: 0 auto;
+}
+.fruit-header-first {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: var(--color-white);
+  padding-top: 28px;
+  padding-bottom: 61px;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.fruit-header-second {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: var(--color-white);
+  padding-top: 28px;
+  padding-bottom: 19px;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.fruit-text {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+  width: 155px;
+  height: 70px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.hero-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 44px;
+}
+
+/* .customers-list-item {
+    flex-basis: calc((100% - 88px) / 2);
+  } */
+
+.border-first {
+  width: 125px;
+  height: 38px;
+  border-radius: 19px;
+  border: 1px solid var(--color-white);
+}
+.border-second {
+  width: 132px;
+  height: 38px;
+  border-radius: 19px;
+  border: 1px solid var(--color-white);
+}
+.border-third {
+  width: 125px;
+  height: 38px;
+  border-radius: 19px;
+  border: 1px solid var(--color-white);
+}
+.border-four {
+  width: 132px;
+  height: 38px;
+  border-radius: 19px;
+  border: 1px solid var(--color-white);
+}
+.hero-list-item-h {
+  width: auto;
+  height: auto;
+}
+.hero-list-item {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/**
+  |============================
+  | tablet version
+  |============================
+*/
+@media only screen and (min-width: 768px) {
+  .cont-hero {
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 137px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 704px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/tabletgirl@1x.webp);
+    background-position-y: 45px;
+  }
+  .hero-text-h1 {
+    width: 704px;
+    height: 168px;
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 513px;
+  }
+  .fruit-first-card {
+    margin-bottom: 0;
+  }
+  .hero-list {
+    margin-bottom: 0;
+  }
+  .hero-button {
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    font-size: 28px;
+    line-height: 1;
+  }
+  .hero-text {
+    text-align: start;
+  }
+  .border-second {
+    width: 133px;
+  }
+  .border-third {
+    width: 115px;
+  }
+  .border-four {
+    width: 110px;
+  }
+  .sorting {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 144px;
+  }
+  .second-group {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .fruit-first-card {
+    margin-left: 30px;
+  }
+  .fruit-second-card {
+    margin: 0;
+    margin-bottom: 44px;
+  }
+  .hero-list {
+    display: flex;
+    justify-content: end;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .cont-hero {
+      background-image: url(../img/tabletgirl@2x.webp);
+    }
+  }
+}
+
+/**
+  |============================
+  | desktop version
+  |============================
+*/
+@media only screen and (min-width: 1280px) {
+  .cont-hero {
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 844px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/desctopgirl@1x.webp);
+    background-position-y: 30px;
+  }
+  .hero-text-h1 {
+    font-size: 64px;
+    line-height: 1;
+    width: 898px;
+    height: 198px;
+    text-align: center;
+    margin-bottom: 483px;
+  }
+  .hero-text {
+    width: 221px;
+    height: 108px;
+  }
+  .sorting {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 568px;
+    z-index: 100;
+    top: 336px;
+  }
+  .first-group {
+    position: absolute;
+    left: 62px;
+    top: 408px;
+    z-index: 101;
+  }
+  .second-group {
+    position: absolute;
+    right: 62px;
+    top: 336px;
+    z-index: 100;
+  }
+
+  .fruit-first-card {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .fruit-second-card {
+    margin-bottom: 44px;
+  }
+  .hero-list {
+    width: 266px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 8px;
+  }
+  .hero-button {
+    margin-bottom: 0;
+  }
+  .cont-hero {
+    padding-bottom: 238px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .cont-hero {
+      background-image: url(../img/desctopgirl@2x.webp);
+    }
+  }
+}

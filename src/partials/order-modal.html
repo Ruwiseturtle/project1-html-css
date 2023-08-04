@@ -1,0 +1,170 @@
+<!-- оформлення бекдропа і модального вікна -->
+
+<div class="backdrop is-hidden" id="backdrop">
+  <div class="order-modal is-hidden" id="modal-order">
+    <h3 class="order-text">YOUR ORDER</h3>
+    <!-- кнопка-крестик -->
+    <button title="Close order button" class="order-btn-close" id="order-close">
+      <svg class="icon-modal" width="28" height="28">
+        <use href="/order-img/order-sprite.svg#icon-close-red"></use>
+      </svg>
+    </button>
+
+    <!-- фото input с корзинками -->
+    <form>
+      <ul class="order-baskets">
+        <li class="order-item">
+          <div class="text-order">
+            <h3 class="order-name-basket">Strawberry Basket</h3>
+            <p class="order-description">Plant</p>
+          </div>
+          <label class="order-product">
+            <input
+              class="order-input-check"
+              type="checkbox"
+              name="checkbox-basket"
+              value="music"
+            />
+            <span class="order-check"> </span>
+            <img
+              class="order-img-basket"
+              srcset="
+                /order-img/basket1@1x.webp  1x,
+                ./order-img/basket1@2x.webp 2x
+              "
+              src="/order-img/basket1@1x.webp"
+              alt="basket with strawberries"
+            />
+          </label>
+        </li>
+        <li class="order-item">
+          <div class="text-order">
+            <h3 class="order-name-basket">Strawberry Basket</h3>
+            <p class="order-description">Plant</p>
+          </div>
+          <label class="order-product">
+            <input
+              class="order-input-check"
+              type="checkbox"
+              name="hobby"
+              value="music"
+            />
+            <span class="order-check"> </span>
+            <img
+              class="order-img-basket"
+              srcset="
+                /order-img/basket2@1x.webp 1x,
+                /order-img/basket2@2x.webp 2x
+              "
+              src="/order-img/basket2@1x.webp"
+              alt="basket of apples and oranges"
+            />
+          </label>
+        </li>
+        <li class="order-item">
+          <div class="text-order">
+            <h3 class="order-name-basket">Strawberry Basket</h3>
+            <p class="order-description">Plant</p>
+          </div>
+          <label class="order-product">
+            <input
+              class="order-input-check"
+              type="checkbox"
+              name="hobby"
+              value="music"
+            />
+            <span class="order-check"> </span>
+            <img
+              class="order-img-basket"
+              srcset="
+                /order-img/basket3@1x.webp 1x,
+                /order-img/basket3@2x.webp 2x
+              "
+              src="/order-img/basket3@1x.webp"
+              alt="basket with berries"
+            />
+          </label>
+        </li>
+      </ul>
+
+      <!-- форма заполнения -->
+      <div class="order-inputs">
+        <label>
+          <input
+            class="order-info-input"
+            type="text"
+            name="username"
+            required
+            pattern="^[A-Z]{1}[a-z]{1,14} [A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14} [А-Я]{1}[а-я]{1,14}$"
+            title="Username must be two words separated by space."
+            placeholder="Enter full name..."
+          />
+        </label>
+        <label>
+          <input
+            class="order-info-input"
+            type="email"
+            name="email"
+            required
+            pattern="^((([0-9A-Za-z]{1}[-0-9A-z\.]{0,30}[0-9A-Za-z]?)|([0-9А-Яа-я]{1}[-0-9А-я\.]{0,30}[0-9А-Яа-я]?))@([-A-Za-z]{1,}\.){1,}[-A-Za-z]{2,})$"
+            title="Email entered incorrectly!"
+            placeholder="Enter email..."
+          />
+        </label>
+        <label>
+          <input
+            class="order-info-input"
+            type="text"
+            name="card"
+            required
+            pattern="[0-9]{13,16}"
+            title="Card number must contain 13 to 16 digits!"
+            placeholder="Enter card.."
+          />
+        </label>
+
+        <label>
+          <textarea
+            class="order-textarea"
+            name="feedback"
+            rows="5"
+            placeholder="Enter comments..."
+          ></textarea>
+        </label>
+        <!-- кнопка отправить -->
+        <button name="submit" class="order-submit" type="submit">
+          <span class="order-btn-text">Submit</span>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- модальне вікно send  is-hidden-->
+  <div class="send is-hidden" id="modal-send">
+    <!-- кнопка-крестик -->
+    <button title="Send close button" class="send-btn-close" id="send-close">
+      <svg class="icon-send-modal" width="24" height="24">
+        <use href="/order-img/order-sprite.svg#icon-close-white"></use>
+      </svg>
+    </button>
+
+    <img
+      class="send-img"
+      srcset="
+        /order-img/raspberries@1px.webp  1x,
+        ./order-img/raspberries@2px.webp 2x
+      "
+      src="/order-img/raspberries@1px.webp"
+      alt="basket with strawberries"
+    />
+
+    <h3 class="send-header">THANK YOU</h3>
+
+    <p class="send-text">
+      Thank you for your order! Our team is preparing your box with fresh,
+      delicious fruits and vegetables, and we'll deliver it straight to your
+      doorstep. We appreciate your business and look forward to providing you
+      with the best possible experience!
+    </p>
+  </div>
+</div>

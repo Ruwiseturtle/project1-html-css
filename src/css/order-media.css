@@ -1,0 +1,111 @@
+/* tablet styles * для планшетів */
+@media screen and (min-width: 768px) {
+  .order-modal {
+    width: 704px;
+    padding: 40px;
+
+    background-image: url('/order-img/girl-banana@1px.webp');
+    background-repeat: no-repeat;
+    background-position: right 0% bottom 0%;
+  }
+
+  .order-item {
+    display: inline-block;
+    width: calc((100% - 12px * (2)) / 3);
+    height: 250px;
+    margin-bottom: 0;
+  }
+
+  .order-submit {
+    display: block;
+  }
+
+  .order-img-basket {
+    bottom: 14px;
+  }
+
+  .text-order {
+    top: 40px;
+  }
+
+  .order-item:nth-child(1) .order-img-basket {
+    width: 133px;
+    left: 34px;
+  }
+  .order-item:nth-child(2) .order-img-basket {
+    width: 172px;
+    left: 14px;
+  }
+  .order-item:nth-child(3) .order-img-basket {
+    width: 172px;
+    left: 14px;
+  }
+
+  .order-info-input,
+  .order-textarea {
+    display: block;
+    width: 360px;
+  }
+
+  .order-textarea {
+    min-height: 145px;
+  }
+
+  .order-info-input {
+    height: 48px;
+  }
+
+  .order-baskets {
+    display: flex;
+    gap: 12px;
+  }
+
+  .girl-img {
+    width: 100%;
+  }
+
+  .send {
+    width: 600px;
+    max-width: 95%;
+  }
+}
+
+.send-img {
+  margin-bottom: 28px;
+}
+
+/* для більших за планшет */
+@media screen and (min-width: 1280px) {
+  .order-baskets {
+    gap: 20px;
+  }
+
+  .order-item {
+    width: calc((100% - 20px * (2)) / 3);
+    height: 308px;
+  }
+
+  .order-modal {
+    width: 891px;
+  }
+
+  .order-item:nth-child(1) .order-img-basket {
+    width: 173px;
+    left: 34px;
+  }
+  .order-item:nth-child(2) .order-img-basket {
+    width: 229px;
+    left: 14px;
+  }
+  .order-item:nth-child(3) .order-img-basket {
+    width: 229px;
+    left: 14px;
+  }
+
+  .order-modal {
+    width: 891px;
+    padding: 40px;
+
+    background-image: url('/order-img/girl-banana-big@1px.webp');
+  }
+}

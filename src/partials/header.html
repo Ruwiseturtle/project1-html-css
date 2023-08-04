@@ -1,13 +1,86 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+  <div class="header-box container">
+    <!-- Main header navigation -->
+    <nav class="header-nav" id="change-header-nav">
+      <!-- Go to the main sections  -->
+      <ul class="header-nav-list list">
+        <li class="header-nav-item">
+          <a
+            class="header-nav-link link"
+            href="#howitworks"
+            aria-label="Howitworks section link"
+            >How It Works</a
+          >
+        </li>
+        <li class="header-item">
+          <a
+            class="header-nav-link link"
+            href="#fruits"
+            aria-label="Fruits section link"
+            >Fruits</a
+          >
+        </li>
+        <li class="header-item">
+          <a
+            class="header-nav-link link"
+            href="#contacts"
+            aria-label="Contacts section link"
+            >Contacts</a
+          >
+        </li>
+      </ul>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+      <!-- Go to the main page -->
+      <a
+        class="page-logo-link link"
+        href="./index.html"
+        target="_blank"
+        rel="noreferrer noopener"
+        aria-label="Page icon"
+      >
+        <div class="page-logo-icon-box">
+          <svg class="page-logo-icon" width="16" height="16">
+            <use href="/img/header-mobile-icons.svg#icon-page-logo-icon"></use>
+          </svg>
+        </div>
+        <p class="page-name">Fresh harvest box</p>
+      </a>
+    </nav>
+    <div class="header-modal-nav">
+      <!-- Go to the basket (order section now) -->
+      <a class="basket-icon-link link" href="#fruits" aria-label="Basket link">
+        <!-- <svg class="basket-icon" width="24" height="24">
+          <use href="/img/header-mobile-icons.svg#icon-basket-logo-icon"></use>
+        </svg> -->
+      </a>
+      <!-- Open mobile menu button -->
+      <button
+        title="Open mobile menu"
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        id="open-menu"
+      >
+        <svg class="basket-icon" width="24" height="24">
+          <use
+            href="/img/header-mobile-icons.svg#icon-open-mobile-menu-icon"
+          ></use>
+        </svg>
+      </button>
+      <!-- Close mobile menu -->
+      <button
+        title="Close mobile menu"
+        class="close-mobile-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        id="close-menu"
+      >
+        <svg class="menu-container-icon" width="24px" height="24px">
+          <use
+            href="/img/header-mobile-icons.svg#icon-close-mobile-menu-icon"
+          ></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </header>

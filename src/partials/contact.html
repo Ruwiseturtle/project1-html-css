@@ -1,0 +1,77 @@
+<!-- Contacts -->
+<section class="contacts">
+  <div class="container contacts-container">
+    <h2 class="contacts-title for-scroll" id="contacts">
+      Fresh Harvest Box has got you covered
+    </h2>
+    <ul class="contacts-img">
+      <li class="m1">
+        <picture class="pic-in-cont">
+          <source
+            srcset="
+              ./img/contacts/melonDesc@2x.jpg 1584w,
+              ./img/contacts/melonDesc.jpg     792w
+            "
+            media="(min-width: 1280px)"
+            sizes="792px"
+          />
+          <source
+            srcset="
+              ./img/contacts/melonTab@2x.jpg 688w,
+              ./img/contacts/melonTab.jpg    344w
+            "
+            media="(min-width: 768px)"
+            sizes="344px"
+          />
+          <source
+            srcset="
+              ./img/contacts/melonTab@2x.jpg 670w,
+              ./img/contacts/melonTab.jpg    335w
+            "
+            media="(max-width: 767px)"
+            sizes="335px"
+          />
+          <img src="./img/contacts/melon.jpg" alt="" />
+        </picture>
+      </li>
+      <li class="m2">
+        <img
+          class="content-img bilberry"
+          srcset="
+            ./img/contacts/bilberry@1x.jpg 1x,
+            ./img/contacts/bilberry@2x.jpg 2x
+          "
+          src="./img/bilberry@1x.jpg"
+          alt="bilberry"
+        />
+      </li>
+    </ul>
+
+    <p class="contacts-info">
+      Our boxes are packed with delicious, nutritious fruits and vegetables,
+      perfect for anyone looking to eat healthier or support local farmers.
+      Order your box today and start enjoying the best that nature has to offer!
+    </p>
+    <div class="container-form">
+      <form class="contacts-form" name="contacts-form">
+        <input
+          class="contacts-email"
+          required
+          pattern="^((([0-9A-Za-z]{1}[-0-9A-z\.]{0,30}[0-9A-Za-z]?)|([0-9А-Яа-я]{1}[-0-9А-я\.]{0,30}[0-9А-Яа-я]?))@([-A-Za-z]{1,}\.){1,}[-A-Za-z]{2,})$"
+          type="email"
+          name="user-email"
+          placeholder="Enter email..."
+          autocomplete="off"
+        />
+        <button
+          name="send-btn"
+          class="contacts-btn"
+          type="button"
+          id="send-open"
+        >
+          <span class="contacts-btn-text"> Send</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

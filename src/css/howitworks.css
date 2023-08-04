@@ -1,0 +1,144 @@
+
+:root {
+  font-family: DM Sans;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.how-it-works .container {
+  padding-bottom: 80px;
+}
+.section-title-how-it-works {
+  margin: 0 auto 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.section-description-how-it-works {
+  margin: 0 auto 44px;
+  text-align: center;
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.steps-to-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+.steps-to-order-item {
+  display: flex;
+  border-radius: 20px;
+  background-color: var(--color-white);
+  padding: 20px 20px;
+  align-items: center;
+  max-width: 335px;
+}
+.steps {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: -0.04em;
+  border: 0px solid;
+  border-radius: 200px;
+  text-align: center;
+  min-width: 136px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-right: 14px;
+}
+.first {
+  background-color: var(--color-red);
+}
+.second {
+  background-color: #a1c864;
+}
+.third {
+  background-color: var(--color-yellow);
+}
+.steps-text {
+  color: var(--color-black);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.steps-to-order-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.how-it-works-gif {
+  border: 0px solid;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 476px;
+}
+.how-it-works-gif > img {
+  object-fit: cover;
+  height: 476px;
+  width: 335px;
+}
+@media screen and (min-width: 768px) {
+  .how-it-works .container {
+    padding-bottom: 144px;
+  }
+
+  .section-title-how-it-works {
+    font-size: 40px;
+    line-height: 1.1;
+    max-width: 624px;
+  }
+  .section-description-how-it-works {
+    max-width: 509px;
+  }
+  .steps-to-order {
+    margin-bottom: 80px;
+  }
+
+  .steps-to-order-item {
+    max-width: 389px;
+    padding: 40px 20px;
+    max-height: 128px;
+  }
+  .steps-to-order-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .how-it-works-gif > img {
+    width: 704px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .how-it-works .container {
+    padding-bottom: 150px;
+  }
+
+  .steps-to-order {
+    flex-direction: row;
+  }
+  .how-it-works-gif {
+    margin: auto;
+    max-width: 860px;
+  }
+  .steps-to-order-item:not(:last-child) {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+  .how-it-works-gif > img {
+    width: 860px;
+  }
+}

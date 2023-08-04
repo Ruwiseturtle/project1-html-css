@@ -1,0 +1,255 @@
+p {
+  margin: 0 auto;
+}
+.fruits-section .container {
+  padding-bottom: 133px;
+}
+body {
+  font-family: 'DM Sans';
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.card-1 {
+  background-color: #f8766b;
+  position: relative;
+  perspective: 1000px;
+}
+.card-2 {
+  background-color: #edd251;
+  position: relative;
+  perspective: 1000px;
+}
+.card-3 {
+  background-color: #9dc262;
+  position: relative;
+  perspective: 1000px;
+}
+.card-4 {
+  background-color: #bfd663;
+  position: relative;
+  perspective: 1000px;
+}
+.card-5 {
+  background-color: #e93f29;
+  position: relative;
+  perspective: 1000px;
+}
+.card-6 {
+  background-color: #db4f4b;
+  position: relative;
+  perspective: 1000px;
+}
+.card-7 {
+  background-color: #9b5366;
+  position: relative;
+  perspective: 1000px;
+  display: none;
+}
+.card-8 {
+  background-color: #f47f4c;
+  position: relative;
+  perspective: 1000px;
+  display: none;
+}
+.card-9 {
+  background-color: #98b37e;
+  position: relative;
+  perspective: 1000px;
+  display: none;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 14px;
+  margin-bottom: 44px;
+}
+.card {
+  border-radius: 20px;
+  padding: 64px 24px 24px 24px;
+}
+.price {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 15px;
+}
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  align-items: center;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin-bottom: 7px;
+}
+.content {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: inline-block;
+  align-items: center;
+  letter-spacing: -0.04em;
+  color: #ae1332;
+}
+.fruits-section-header {
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 44px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.fruits-header-content {
+  margin-bottom: 44px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 768px) {
+  .fruits-section .container {
+    padding-bottom: 223px;
+  }
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .fruits-section-header {
+    font-size: 40px;
+  }
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 16px;
+  }
+  .card {
+    border-radius: 20px;
+    padding: 64px 24px 24px 24px;
+    width: calc((100% - 16px) / 2);
+  }
+  .card-7 {
+    display: block;
+  }
+  .card-8 {
+    display: block;
+  }
+}
+/* Загальні стилі для десктопу */
+@media screen and (min-width: 1280px) {
+  .fruits-section .container {
+    padding-bottom: 239px;
+  }
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+  .fruits-header-content {
+    max-width: 547px;
+    margin-bottom: 44px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  }
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 24px;
+  }
+  .card {
+    border-radius: 20px;
+    padding: 64px 24px 24px 24px;
+    width: calc((100% - 48px) / 3);
+  }
+  .card-9 {
+    display: block;
+  }
+}
+.image-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 295px;
+}
+
+.flip-card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  transform: rotateY(0deg);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 50px;
+}
+
+.back-text {
+  max-width: 300px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.card:hover .flip-card {
+  transform: rotateY(180deg);
+}
+.card-hid {
+  display: none;
+}
